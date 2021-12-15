@@ -1,0 +1,19 @@
+using System;
+
+namespace _13._1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите стоимость 1 кг коныет");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"Стоимость одного килограмма конфет {a} руб.\n");
+
+            for (double i = 0.1; i < 1.0; i += 0.1)
+                Console.WriteLine("Цена за {0} кг.: {1:0.00} руб.", i, a * i);
+
+            Console.ReadLine();
+        }
+    }
+}
